@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leicester Cathedral Anecdotes</title>
+
+<style>
+  :root {
+    /* Same palette as main page */
+    --cathedral-purple: #49004F;
+    --accent-red: #DA1C5C;
+    --light-panel: rgba(255, 248, 240, 0.96);
+    --text-dark: #222222;
+    --muted: #333333;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background: url("old-paper.png") center top no-repeat fixed;
+    background-size: cover;
+    color: var(--text-dark);
+    font-size: 18px; /* larger base size */
+  }
+
+  header {
+    background: var(--cathedral-purple);
+    color: white;
+    padding: 28px 0;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .timeline {
+    max-width: 1400px;       /* wide desktop layout */
+    margin: 30px auto 30px auto;
+    padding: 24px;
+    background: var(--light-panel);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  }
+
+  /* Timeline alternating layout */
+  .entry {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  .entry:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  /* Figure + caption styling */
+  figure {
+    width: 34%;             /* slightly narrower images */
+    margin: 0;
+    text-align: center;
+  }
+  figure img {
+    width: 100%;
+    max-height: 360px;      /* keep images a good height */
+    object-fit: cover;      /* neat crop if very tall */
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  }
+  figcaption {
+    font-size: 15px;        /* larger caption text */
+    color: #666;
+    margin-top: 6px;
+    font-style: italic;
+  }
+
+  /* Text column */
+  .entry-text {
+    width: 66%;             /* wider text column */
+  }
+  .entry-text h2 {
+    margin-top: 0;
+    color: var(--cathedral-purple);
+    font-size: 34px;
+  }
+  .entry-text p {
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 21px;        /* enlarged paragraph text */
+    margin: 6px 0;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--cathedral-purple);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Leicester Cathedral Anecdotes</h1>
+  <nav>
+    <a href="website_mockup.html">Home</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="timeline">
+
+  <!-- ENTRY 1 — Cathedral Exterior -->
+  <div class="entry">
+    <figure>
+      <img src="Leicestershire-Cathedral.jpg" alt="Leicester Cathedral Exterior">
+      <figcaption>Leicester Cathedral</figcaption>
+    </figure>
+
+    <div class="entry-text">
+      <h2>A Cathedral Shaped by Centuries</h2>
+      <p>
+        Leicester Cathedral has stood as a symbol of community and faith for many centuries.
+        Its medieval tower and stonework have watched the city grow and change around it,
+        while the building continues to welcome new generations of visitors.
+      </p>
+      <p>
+        Beneath the surface, however, the ground preserves much older traces of the people
+        who lived, worked and worshipped on this site long before today’s Cathedral took shape.
+      </p>
+    </div>
+  </div>
+
+  <!-- ENTRY 2 — EARLY-STAGE EXCAVATION PHOTO -->
+  <div class="entry">
+    <figure>
+      <img src="Excavation photos 2.jpeg" alt="Archaeologists opening up the ground at Leicester Cathedral">
+      <figcaption>Opening up the ground around Leicester Cathedral</figcaption>
+    </figure>
+
+    <div class="entry-text">
+      <h2>Opening Up the Cathedral Site</h2>
+      <p>
+        The excavations began with the careful removal of modern surfaces and rubble around the Cathedral.
+        Archaeologists and contractors worked together to strip back the upper layers so that earlier deposits
+        could be reached safely.
+      </p>
+      <p>
+        At this stage the area can look like a building site, but every layer of soil has the potential to
+        contain clues about Leicester’s past. Once the ground is opened up, archaeologists can decide where to
+        dig more deeply and start to uncover the stories hidden beneath the surface.
+      </p>
+    </div>
+  </div>
+
+  <!-- ENTRY 3 — LATE-STAGE EXCAVATION PHOTO -->
+  <div class="entry">
+    <figure>
+      <img src="Excavation photos.webp" alt="Deep excavation beside Leicester Cathedral showing walls and burials">
+      <figcaption>Walls, graves and other structures revealed below ground</figcaption>
+    </figure>
+
+    <div class="entry-text">
+      <h2>What Lies Beneath: Excavations by University of Leicester Archaeological Services (ULAS)</h2>
+      <p>
+        As work went deeper, the excavations revealed walls, grave cuts and other structures that had been
+        buried for centuries. Layers of burials, building foundations and later alterations show how the
+        churchyard and Cathedral were rebuilt and reused over a long period.
+      </p>
+      <p>
+        Alongside these larger features, the soil also produced smaller finds such as pottery, animal bone
+        and oyster shell. Together, these remains help archaeologists to reconstruct everyday life around
+        the Cathedral and to explain how the site developed into the building visitors see today.
+      </p>
+    </div>
+  </div>
+
+  <!-- ENTRY 4 — Stained Glass Windows -->
+  <div class="entry">
+    <figure>
+      <img src="Windows.jpeg" alt="Stained glass window">
+      <figcaption>Stained glass window inside Leicester Cathedral</figcaption>
+    </figure>
+
+    <div class="entry-text">
+      <h2>More Stories Beneath the Surface</h2>
+      <p>
+        Inside the Cathedral, stained glass windows show scenes of faith, local history and
+        everyday human experience. Coloured light and patterned glass turn stories into images,
+        just as the archaeology outside turns traces in the soil into stories about real people.
+      </p>
+      <p>
+        Together, the windows above and the layers below remind visitors that Leicester Cathedral
+        is both a place of worship and a place of memory, where new generations can explore the past.
+      </p>
+    </div>
+  </div>
+
+  <!-- ENTRY 5 — King Richard III -->
+  <div class="entry">
+    <figure>
+      <img src="king.webp" alt="King Richard III at Leicester Cathedral">
+      <figcaption>King Richard III – a story connected to Leicester</figcaption>
+    </figure>
+
+    <div class="entry-text">
+      <h2>Continuing the Cathedral’s Story</h2>
+      <p>
+        The reinterment of King Richard III in 2015 brought worldwide attention to Leicester Cathedral
+        and to the city’s archaeological work. His tomb inside the Cathedral is now a major focus for
+        visitors, linking national history with the local community.
+      </p>
+      <p>
+        The Cathedral remains a living place, shaped by its long past and by the work of archaeologists,
+        conservators and educators today. The stories uncovered in the ground now feed into family
+        activities such as “Cathedral Kids: The Big Dig”, helping children discover the history
+        beneath their feet.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<footer id="contact">
+  <p>
+    Connect with us:
+    <a href="#">Social Media</a> • 
+    <a href="#">Contact Us</a> • 
+    <a href="https://leicestercathedral.org/" target="_blank">Leicester Cathedral</a>
+  </p>
+</footer>
+
+</body>
+</html>

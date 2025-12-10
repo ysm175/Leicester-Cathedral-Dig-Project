@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cathedral Kids: The Big Dig</title>
+
+  <style>
+    :root {
+      /* Leicester Cathedral–inspired palette (same as anecdotes page) */
+      --cathedral-purple: #49004F;  /* main header colour */
+      --accent-red: #DA1C5C;        /* supporting accent */
+      --light-panel: rgba(255, 248, 240, 0.96);
+      --text-dark: #222222;
+      --muted: #333333;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: url("old-paper.png") center top no-repeat fixed;
+      background-size: cover;
+      color: var(--text-dark);
+      font-size: 18px;
+    }
+
+    header {
+      background: var(--cathedral-purple);
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 38px;   /* was 40px */
+      font-weight: bold;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 14px;
+      text-decoration: none;
+      font-size: 16px;   /* was 18px */
+      font-weight: 500;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 30px auto 0 auto;
+      padding: 26px;
+      background: var(--light-panel);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+    .hero-title {
+      font-size: 30px;   /* was 32px */
+      margin-bottom: 10px;
+      color: var(--cathedral-purple);
+      font-weight: 700;
+    }
+    .hero-banner {
+      margin-top: 10px;
+      display: inline-block;
+      background: var(--accent-red);
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 18px;   /* was 20px */
+    }
+    .hero p {
+      margin-top: 20px;
+      font-size: 19px;   /* was 21px */
+      font-weight: 500;
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 28px auto;
+      padding: 0 20px;
+    }
+
+    .panel {
+      background: var(--light-panel);
+      padding: 24px;
+      margin-bottom: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    }
+
+    .panel h2 {
+      margin-top: 0;
+      font-size: 32px;        /* was 34px */
+      color: var(--cathedral-purple);
+    }
+    .panel p {
+      margin: 8px 0;
+      color: var(--muted);
+      font-size: 19px;        /* was 21px */
+      line-height: 1.8;
+    }
+    .panel ul {
+      margin: 10px 0 0 24px;
+      padding: 0;
+      color: var(--muted);
+      font-size: 19px;        /* was 21px */
+      line-height: 1.8;
+    }
+    .panel ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Desktop-style side-by-side layout for panels with images */
+    .panel-flex {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+    .panel-text {
+      flex: 0 0 60%;
+      min-width: 0;
+    }
+    .panel-image {
+      flex: 0 0 38%;
+      max-width: 38%;
+      margin-right: 16px;
+    }
+    .panel-image img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+      display: block;
+      margin-bottom: 12px;   /* space between stacked images */
+    }
+    .panel-image p {
+      font-size: 17px;
+      color: #666;
+      margin-top: 2px;
+      font-style: italic;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 18px;       /* was 20px */
+      font-weight: 500;
+      margin-top: 12px;
+    }
+    .btn-primary {
+      background: var(--cathedral-purple);
+      color: #fff;
+    }
+    .btn-secondary {
+      background: var(--accent-red);
+      color: #fff;
+    }
+
+    footer {
+      background: var(--cathedral-purple);
+      color: white;
+      text-align: center;
+      padding: 22px 0;
+      margin-top: 30px;
+      font-size: 15px;       /* was 17px */
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Cathedral Kids: The Big Dig</h1>
+  <nav>
+    <a href="#about">Event Info</a>
+    <a href="#online">Online Activities</a>
+    <a href="#stories">Stories &amp; Finds</a>
+    <a href="https://leicestercathedral.org/" target="_blank">Visit</a>
+  </nav>
+</header>
+
+<!-- HERO / INTRO -->
+<div class="hero">
+  <div class="hero-title">Family Archaeology Fun at Leicester Cathedral</div>
+  <div class="hero-banner">Free outdoor event – hands-on activities for children and families</div>
+  <p>
+    <strong>Cathedral Kids: The Big Dig</strong> is a family-friendly archaeology day inspired by
+    the <em>Leicester Cathedral Revealed</em> project and excavations carried out by
+    University of Leicester Archaeological Services (ULAS). Children are invited to dig, discover
+    and play while learning about the stories buried beneath the Cathedral.
+  </p>
+</div>
+
+<div class="section" id="about">
+
+  <!-- ABOUT THE EVENT -->
+  <div class="panel panel-flex">
+    <div class="panel-text">
+      <h2>About the Event</h2>
+      <p><strong>When:</strong> Summer (family sessions during the day)</p>
+      <p><strong>Where:</strong> Leicester Cathedral outdoor space</p>
+      <p><strong>Who:</strong> Families with children and young people of primary and early secondary age</p>
+
+      <p><strong>What you can do on the day:</strong></p>
+      <ul>
+        <li>Explore sandpit “dig boxes” with replica and 3D-printed finds</li>
+        <li>Wash and handle safe artefacts with help from volunteers</li>
+        <li>Colour and create at a craft station inspired by Cathedral windows and stonework</li>
+        <li>Talk to an archaeologist and ask questions about real discoveries</li>
+        <li>Join simple role-play activities based on life around the Cathedral</li>
+      </ul>
+
+      <p style="margin-top:10px;">
+        The event is designed to be welcoming and accessible, offering a relaxed introduction to archaeology
+        rather than a formal history lesson.
+      </p>
+      <p>
+        Learn more about the archaeology behind the event by visiting our
+        <a href="anecdotes.html" style="color: var(--cathedral-purple); font-weight:600;">Leicester Cathedral Anecdotes</a>
+        page, or explore the Cathedral itself via the
+        <a href="https://leicestercathedral.org/" target="_blank" style="color: var(--cathedral-purple); font-weight:600;">
+          official website
+        </a>.
+      </p>
+    </div>
+
+    <!-- Illustration & extra image on the right -->
+    <div class="panel-image">
+      <img src="Dig game.png" alt="Illustration of Cathedral Kids: The Big Dig event">
+      <img src="Historical Game.png" alt="Character cards of Archie O'Logist and Richard III">
+    </div>
+  </div>
+
+  <!-- ONLINE / WEBSITE ACTIVITIES -->
+  <div class="panel" id="online">
+    <h2>Online Activities &amp; At-Home Digging</h2>
+    <p>
+      The online resource extends the event beyond the Cathedral grounds so that families can continue
+      exploring at home.
+    </p>
+    <ul>
+      <li>An image-based timeline and anecdotes page showing the Cathedral, the excavations and key discoveries</li>
+      <li>Short, child-friendly explanations of what archaeologists found and why it matters</li>
+      <li>Space for future interactive features, such as a simple “virtual dig” click-and-reveal game</li>
+      <li>Downloadable activity sheets that can be printed and brought to the event for small prizes</li>
+    </ul>
+    <p>
+      These online elements support teachers, group leaders and families who may not be able
+      to attend in person, or who would like extra resources after their visit.
+    </p>
+    <a class="btn btn-primary" href="anecdotes.html">Explore Stories &amp; Images</a>
+    <!-- Placeholder link for future game/sheet -->
+    <a class="btn btn-secondary" href="#" style="margin-left:8px;">Download Activity Sheet (coming soon)</a>
+  </div>
+
+  <!-- STORIES & FINDS -->
+  <div class="panel panel-flex" id="stories">
+    <!-- Cathedral + excavation images on the left -->
+    <div class="panel-image">
+      <img src="Leicestershire-Cathedral.jpg" alt="Leicester Cathedral exterior">
+      <img src="Excavation photos.webp" alt="Excavation work beside Leicester Cathedral">
+      <p>Leicester Cathedral today, and the excavations that revealed stories beneath its grounds.</p>
+    </div>
+
+    <div class="panel-text">
+      <h2>Stories Beneath Our Feet</h2>
+      <p>
+        Excavations linked to <em>Leicester Cathedral Revealed</em> have uncovered graves, walls, floors and
+        thousands of artefacts, revealing how the site has changed from earlier churches and graveyards into
+        the Cathedral visitors see today.
+      </p>
+      <p>
+        Our <strong>Leicester Cathedral Anecdotes</strong> page brings together photographs and short stories
+        about:
+      </p>
+      <ul>
+        <li>The Cathedral exterior and its changing surroundings</li>
+        <li>How archaeologists opened up and excavated the site with ULAS</li>
+        <li>Objects from everyday life, including pottery, animal bone and other finds</li>
+        <li>Windows, memorials and the reinterment of King Richard III</li>
+      </ul>
+      <p>
+        These stories provide the background for <em>Cathedral Kids: The Big Dig</em>, helping families connect
+        the playful activities in the sandpits with the real archaeology beneath Leicester Cathedral.
+      </p>
+      <a class="btn btn-primary" href="anecdotes.html">Read the Anecdotes</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    Connect with us:
+    <a href="#">Social Media</a> •
+    <a href="#">Contact Us</a> •
+    <a href="https://leicestercathedral.org/" target="_blank">Leicester Cathedral</a>
+  </p>
+</footer>
+
+</body>
+</html>
